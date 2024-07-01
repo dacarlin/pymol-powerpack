@@ -1,0 +1,5 @@
+set ray_shadow, 0 
+set cartoon_side_chain_helper, 1 
+
+# add in PowerPack commands 
+run commands.py 
