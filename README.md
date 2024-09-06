@@ -1,6 +1,8 @@
-# PyMOL Powerpack 
+# PyMOL PowerPack 
 
-Powerup your PyMOL 🧬 with this powerpack of commands 🚀
+Power up your PyMOL 🧬 with this PowerPack of commands 🚀 
+
+**Background.** As someone who designs proteins, I have my favorite ways of doing things, especially in PyMOL. This PowerPack adds the features to PyMOL that make my work easy. 
 
 
 ## Installation 
@@ -22,4 +24,5 @@ You can find your `.pymolrc` in your home folder, or open it from within PyMOL. 
 
 ## Available commands 
 
-- `align_all(target)`. Align all structures in the session to the provided `target` using structural alignment    
+- `align_all(target=None)`. Align all structures in the session to the provided `target` using structural alignment. If no target is provided, align everything to the first structure in the list of structures 
+- `fetch_af(uniprot_accession)`. Using the provided UniProt accession, attempt to fetch an AlphaFold prediction for the sequence. (Does no computation, just a `GET` request to the AlphaFold database server.)
