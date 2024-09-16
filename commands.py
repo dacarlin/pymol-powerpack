@@ -51,7 +51,7 @@ def download_alphafold_pdb(name, folder, verbose=False):
 def fetch_af(uniprot_accession):
     """Attempt to fetch an AlphaFold prediction for your UniProt accession"""
 
-    downloads_path = cmd.get("fetch_path")
+    downloads_path = os.path.abspath(cmd.get("fetch_path"))
     print(f"Downloading AlphaFold structure of {uniprot_accession} to {downloads_path=}")
 
     try:
